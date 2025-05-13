@@ -1,17 +1,23 @@
+function firstWord(str) {
+  // Trim leading and trailing spaces
+  str = str.trim();
 
-let s = "some string";
-function firstWord(s) {
-  // your code here
-	s = s.trim();
-  if (s === '') {
+  // Check if the string is empty after trimming
+  if (str === '') {
     return '';
   }
-  const spaceIndex = s.indexOf(' ');
+
+  // Find the index of the first space
+  const spaceIndex = str.indexOf(' ');
+
+  // If there's no space, return the whole string, otherwise return the first word
   if (spaceIndex === -1) {
-    return s;
+    return str;  // No space found, return the whole string
   }
-  return s.substring(0, spaceIndex);
+
+  return str.substring(0, spaceIndex);  // Extract the first word
 }
+
 
 // Do not change the code below
 
