@@ -1,3 +1,5 @@
+
+let s = "some string";
 function firstWord(s) {
   // your code here
 	s = s.trim();
